@@ -8,7 +8,7 @@ const Footer = () => {
 
     const navItems = [
         { name: 'Home', path: '/' },
-        { name: 'About Us', path: '/about' },
+        { name: 'About Us', path: '/aboutus' },
         { name: 'Our Product', path: '/products' },
         { name: 'Event & Trade Show', path: '/events' },
         { name: 'Blogs', path: '/blogs' },
@@ -56,29 +56,29 @@ const Footer = () => {
 
                         <div className='flex flex-col gap-[25px]'>
                             <div className='flex flex-row gap-[15px]'>
-                                <Link className='text-[35px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-instagram" aria-hidden="true"></i></Link>
-                                <Link className='text-[35px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-facebook-official" aria-hidden="true"></i></Link>
-                                <Link className='text-[35px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-telegram" aria-hidden="true"></i></Link>
-                                <Link className='text-[35px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-youtube-play" aria-hidden="true"></i></Link>
-                                <Link className='text-[35px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-envelope-o" aria-hidden="true"></i></Link>
+                                <Link className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-instagram" aria-hidden="true"></i></Link>
+                                <Link className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-facebook-official" aria-hidden="true"></i></Link>
+                                <Link className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-telegram" aria-hidden="true"></i></Link>
+                                <Link className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-youtube-play" aria-hidden="true"></i></Link>
+                                <Link className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-envelope-o" aria-hidden="true"></i></Link>
                             </div>
 
                             <div className='transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565] flex flex-row items-center gap-[15px]'>
                                 <div>
-                                    <Link className='text-[35px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-map-marker" aria-hidden="true"></i></Link>
+                                    <Link className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-map-marker" aria-hidden="true"></i></Link>
                                 </div>
                                 <div>
-                                    <p className='font-roboto text-white text-[20px]'>6037, VIKAS LOGISTICS PARK, <br></br>KUMBHARIA, SURAT, GUJARAT 395010</p>
+                                    <p className='font-roboto text-white text-[18px]'>6037, VIKAS LOGISTICS PARK, <br></br>KUMBHARIA, SURAT, GUJARAT 395010</p>
                                 </div>
                             </div>
 
                             <div className='transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565] flex flex-row items-center gap-[15px]'>
                                 <div>
-                                    <Link className='text-[35px] text-white '><i class="fa fa-phone-square" aria-hidden="true"></i></Link>
+                                    <Link className='text-[30px] text-white '><i class="fa fa-phone-square" aria-hidden="true"></i></Link>
                                 </div>
                                 <div className='flex flex-col gap-[5px]'>
-                                    <p className='font-roboto text-white text-[20px]'>+91 99047 55595</p>
-                                    <p className='font-roboto text-white text-[20px]'>+91 94266 75595</p>
+                                    <p className='font-roboto text-white text-[18px]'>+91 99047 55595</p>
+                                    <p className='font-roboto text-white text-[18px]'>+91 94266 75595</p>
                                 </div>
                             </div>
                         </div>
