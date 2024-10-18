@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slider-item_viewdproduct {
+    width: 95% !important;
+    box-shadow: 4px 7px 12px -6px black;
+    margin: 27px 169px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.countact_usFiled {
+    border: 1px solid black;
+    padding: 13px;
+    border-radius: 4px;
+}
+
+.inquiryform {
+    background: white;
+    box-shadow: 0px 1px 7px -3px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
