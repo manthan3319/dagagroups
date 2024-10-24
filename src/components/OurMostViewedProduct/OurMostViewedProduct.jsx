@@ -58,16 +58,16 @@ const OurMostViewedProduct = () => {
         nextArrow: <NextArrow />,
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 1040,  
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                 },
             },
             {
-                breakpoint: 1024,
+                breakpoint: 768,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 },
             },

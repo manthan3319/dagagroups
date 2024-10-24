@@ -75,7 +75,7 @@ const MakingFabricSlider = () => {
               src={slide.image}
               alt={slide.alt}
               effect="blur"
-              className='md:h-[650px] object-cover w-[95%] m-auto'
+              className='md:h-[650px] object-fill w-[95%] m-auto'
             />
           </motion.div>
         ))}

@@ -15,7 +15,7 @@ const EventTradeShow = () => {
 
     const { ref: sectionRef, inView: sectionInView } = useInView({
         triggerOnce: true,
-        threshold: 0.1, // 10% visibility to trigger the animation
+        threshold: 0.1, 
     });
 
     const containerVariants = {
@@ -40,23 +40,23 @@ const EventTradeShow = () => {
                     <h1 className='font-tomorrow sm:text-[45px] text-[35px] font-bold pb-[10px] border-b-[1px] inline-block'>Event & Trade Show</h1>
                 </div>
 
-                <motion.div className='relative my-[60px]' variants={itemVariants}>
+                <motion.div className='relative md:my-[60px]' variants={itemVariants}>
                     <LazyLoadImage
                         src={dagabanner}
                         alt="Event & Trade Show Banner"
                         effect="blur"
-                        className='h-[600px] w-full object-contain border-black'
+                        className='md:h-[600px] w-full object-contain border-black'
                     />
                 </motion.div>
 
                 <motion.div className='pt-[50px] gap-[15px] grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-2'>
                     {galleryItems.map(item => (
-                        <motion.div key={item.id} className='h-[200px] bg-slate-400 rounded-lg border-[1px] border-black' variants={itemVariants}>
+                        <motion.div key={item.id} className='' variants={itemVariants}>
                             <LazyLoadImage
                                 src={item.img}
                                 alt={item.alt}
                                 effect="blur"
-                                className='h-[200px] w-full object-cover rounded-lg'
+                                className='md:h-[200px] h-[120px] object-cover  rounded-lg border-[1px] border-black'
                             />
                         </motion.div>
                     ))}

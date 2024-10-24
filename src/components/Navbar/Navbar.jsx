@@ -95,7 +95,7 @@ const Navbar = () => {
             <div className='lg:hidden block px-[20px] py-[25px] border-b-[1px] border-black sticky top-0 bg-white z-[9999] '>
                 <div className='flex justify-between items-center '>
                     <div>
-                        <Link className='font-bold text-[30px] font-tomorrow'>
+                        <Link to="/" className='font-bold text-[30px] font-tomorrow'>
                             DAGA GROUP
                         </Link>
                     </div>

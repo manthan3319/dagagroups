@@ -25,7 +25,7 @@ const OurPartners = () => {
                 </div>
 
                 <div className='w-[90%] mx-auto my-[50px]'>
-                    <div className='flex flex-wrap sm:gap-[25px] gap-[10px] justify-center'>
+                    <div className='flex flex-wrap sm:gap-[20px] gap-[10px] justify-center'>
                         {partnerData.map((partner) => (
                             <div key={partner.id} className='h-[120px] lg:w-[18%] md:w-[30%] sm:w-[48%] w-[48%]  bg-slate-400 rounded-lg flex items-center justify-center'>
                                 <img

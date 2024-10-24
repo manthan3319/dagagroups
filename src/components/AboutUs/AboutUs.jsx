@@ -60,7 +60,6 @@ const AboutUs = () => {
                     </motion.p>
                 </div>
 
-                {/* Mission, Vision, Values Section */}
                 <div className='mt-[80px] grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[55px] text-center items-center bg-black sm:p-[50px] p-[20px] rounded-lg box_shadow_black'>
                     <motion.div
                         ref={missionRef}
@@ -102,8 +101,7 @@ const AboutUs = () => {
                     </motion.div>
                 </div>
 
-                {/* Lazy Loaded Image */}
-                <div className='relative my-[60px] h-[160px]'>
+                <div className='relative my-[60px] h-[220px] md:h-[600px] '>
                     <LazyLoadImage
                         src={aboutimg}
                         alt="Active Wear"
@@ -114,7 +112,6 @@ const AboutUs = () => {
                     <div className='md:h-[600px] bg-black bg-opacity-30'></div>
                 </div>
 
-                {/* Why Choose Us Section */}
                 <div ref={chooseUsRef}>
                     <div className='text-center'>
                         <motion.h1
