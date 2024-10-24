@@ -48,15 +48,15 @@ const OurFabrics = () => {
         >
             <div className='absolute top-0 left-0 right-0 bottom-0 bg-black opacity-80 z-[1]'></div>
 
-            <div className='relative z-[2] py-[150px]'>
+            <div className='relative z-[2] sm:py-[150px] py-[90px]'>
                 <div className='lg:max-w-[1440px] px-[20px] m-auto text-white'>
-                    <div className='w-[70%] m-auto'>
+                    <div className='sm:w-[70%] w-[90%] m-auto'>
                     <Slider {...settings}>
                         {fabrics.map((fabric) => (
                             <div key={fabric.id} className='text-center'>
                                 <div className='max-w-[800px] m-auto'>
-                                    <h1 className='text-[45px] font-bold'>{fabric.title}</h1>
-                                    <p className='text-[18px] my-[20px]'>{fabric.description}</p>
+                                    <h1 className='sm:text-[45px] text-[25px] font-bold'>{fabric.title}</h1>
+                                    <p className='sm:text-[18px] text-[15px] my-[20px]'>{fabric.description}</p>
 
                                     <Link 
                                         to={fabric.link} 

@@ -12,35 +12,35 @@ const YearsOfExperience = () => {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className='w-[70%] m-auto'>
+      <div className='sm:w-[70%] w-[100%] m-auto'>
         <div className='grid grid-cols-2 lg:grid-cols-4 gap-8 text-center'>
 
           <div>
-            <h1 className='text-[55px] font-bold font-roboto'>
+            <h1 className='sm:text-[55px] text-[45px] font-bold font-roboto'>
               <CountUp end={813} duration={3} />+
             </h1>
-            <p className='font-roboto font-bold text-[25px]'>Unique Products</p>
+            <p className='font-roboto font-bold sm:text-[25px] text-[20px]'>Unique Products</p>
           </div>
 
           <div>
-            <h1 className='text-[55px] font-bold font-roboto'>
+            <h1 className='sm:text-[55px] text-[45px] font-bold font-roboto'>
               <CountUp end={18} duration={3} />+
             </h1>
-            <p className='font-roboto font-bold text-[25px]'>Years Of Experience</p>
+            <p className='font-roboto font-bold sm:text-[25px] text-[20px]'>Years Of Experience</p>
           </div>
 
           <div>
-            <h1 className='text-[55px] font-bold font-roboto'>
+            <h1 className='sm:text-[55px] text-[45px] font-bold font-roboto'>
               <CountUp end={2500} duration={3} />+
             </h1>
-            <p className='font-roboto font-bold text-[25px]'>Satisfied Customers</p>
+            <p className='font-roboto font-bold sm:text-[25px] text-[20px]'>Satisfied Customers</p>
           </div>
 
           <div>
-            <h1 className='text-[55px] font-bold font-roboto'>
+            <h1 className='sm:text-[55px] text-[45px] font-bold font-roboto'>
               <CountUp end={7} duration={3} />+
             </h1>
-            <p className='font-roboto font-bold text-[25px]'>Country Presence</p>
+            <p className='font-roboto font-bold sm:text-[25px] text-[20px]'>Country Presence</p>
           </div>
         </div>
       </div>

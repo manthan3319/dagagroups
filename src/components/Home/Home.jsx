@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import MakingFabricSlider from '../MakingFabricSlider/MakingFabricSlider'
 import YearsOfExperience from '../YearsOfExperience/YearsOfExperience'
 import WelcomeToDaga from '../WelcomeToDaga/WelcomeToDaga'
@@ -10,6 +10,11 @@ import OurFabrics from '../OurFabrics/OurFabrics'
 import HomeContactUs from '../HomeContactUs/HomeContactUs'
 
 const Home = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     return (
         <div>
             <div>
@@ -31,15 +36,15 @@ const Home = () => {
                 <OurMostViewedProduct />
             </div>
             <div>
-                <OurPartners/>
+                <OurPartners />
             </div>
 
             <div>
-                <OurFabrics/>
+                <OurFabrics />
             </div>
 
             <div>
-                <HomeContactUs/>
+                <HomeContactUs />
             </div>
         </div>
     )

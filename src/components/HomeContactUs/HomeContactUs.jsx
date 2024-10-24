@@ -9,9 +9,9 @@ const HomeContactUs = () => {
                 </div>
 
                 <div className='pt-[50px]'>
-                    <div className='w-[80%] m-auto flex justify-between items-center text-center gap-[45px]'>
+                    <div className='xl:w-[80%] w-[100%] m-auto flex justify-between lg:flex-row flex-col md:flex-wrap items-center text-center lg:gap-[45px] md:gap-[15px]'>
                    
-                        <div className='inquiryform lg:w-[33%] h-[200px] flex flex-col justify-center border-[1px] border-black gap-[7px] p-[30px] rounded-lg'>
+                        <div className='inquiryform lg:w-[31%] md:w-[48%] w-[100%] h-[200px] flex flex-col justify-center border-[1px] border-black gap-[7px] p-[30px] rounded-lg'>
                             <p className='text-[45px]'><i className="fa fa-phone-square" aria-hidden="true"></i></p>
                             <div>
                                 <p className='text-[18px] font-roboto mb-[5px]'>+91 99047 55595</p>
@@ -19,7 +19,7 @@ const HomeContactUs = () => {
                             </div>
                         </div>
 
-                        <div className='inquiryform lg:w-[33%] h-[200px] flex flex-col justify-center border-[1px] border-black gap-[7px] p-[30px] rounded-lg'>
+                        <div className='inquiryform lg:w-[31%] h-[200px] md:w-[48%] flex flex-col justify-center border-[1px] border-black gap-[7px] p-[30px] rounded-lg'>
                             <p className='text-[45px]'><i className="fa fa-map-marker" aria-hidden="true"></i></p>
                             <div>
                                 <p className='text-[20px] font-roboto'>
@@ -28,7 +28,7 @@ const HomeContactUs = () => {
                             </div>
                         </div>
 
-                        <div className='inquiryform lg:w-[33%] h-[200px] flex flex-col justify-center border-[1px] border-black gap-[7px] p-[30px] rounded-lg'>
+                        <div className='inquiryform lg:w-[31%] md:w-[100%] w-[100%] h-[200px] flex flex-col justify-center border-[1px] border-black gap-[7px] p-[30px] rounded-lg'>
                             <p className='text-[45px]'><i className="fa fa-envelope" aria-hidden="true"></i></p>
                             <div>
                                 <p className='text-[18px] font-roboto'>hello@dagagroups.in</p>
@@ -37,7 +37,7 @@ const HomeContactUs = () => {
                     </div>
                 </div>
 
-                <div className='w-[80%] mt-[70px] m-auto flex flex-col gap-[15px] inquiryform'>
+                <div className='lg:w-[80%] w-[100%] mt-[70px] m-auto flex flex-col gap-[15px] inquiryform'>
                     <div className='text-center mb-[50px]'>
                         <h1 className='text-[35px] font-roboto font-bold border-b-[1px] inline-block pb-[3px]'>Inquiry form</h1>
                     </div>

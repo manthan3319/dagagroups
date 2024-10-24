@@ -4,16 +4,25 @@ import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import AboutUs from "./components/AboutUs/AboutUs";
+import OurProducts from "./components/OurProducts/OurProducts";
+import EventTradeShow from "./components/EventTradeShow/EventTradeShow";
+import Blogs from "./components/Blogs/Blogs";
+import Careers from "./components/Careers/Careers";
+import ContactUs from "./components/ContactUs/ContactUs";
 const App = () => {
   return (
     <BrowserRouter>
-    <Navbar/>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/aboutus" element={<AboutUs />}>
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/products" element={<OurProducts />} />
+        <Route path="/events" element={<EventTradeShow />}/>
+        <Route path="/blogs" element={<Blogs />}/>
+        <Route path="/career" element={<Careers />}/>
+        <Route path="/contact" element={<ContactUs />}/>
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   );
 };

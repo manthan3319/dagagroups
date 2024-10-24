@@ -23,7 +23,7 @@ const Footer = () => {
     return (
         <div className='bg-black pt-[50px]'>
             <div className='lg:max-w-[1440px] px-[20px] m-auto'>
-                <div className='grid lg:grid-cols-3 gap-[50px]'>
+                <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-[50px]'>
                     <div>
                         <Link><img src={logowhite} className='' /></Link>
                         <p className='text-white mt-[15px] font-tomorrow'>We are committed to transform ourselves into a renowned textile company across the globe by establishing strong network of clients with support of our young & highly talented professionals and having turnover of 500 Crores by the year 2025.</p>

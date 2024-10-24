@@ -21,13 +21,13 @@ const OurPartners = () => {
         <div className='my-[60px]'>
             <div className='lg:max-w-[1440px] px-[20px] m-auto'>
                 <div className='title'>
-                    <h1 className='text-[45px] font-tomorrow font-semibold text-center'>OUR PARTNERS</h1>
+                    <h1 className='sm:text-[45px] text-[35px] font-tomorrow font-semibold text-center'>OUR PARTNERS</h1>
                 </div>
 
                 <div className='w-[90%] mx-auto my-[50px]'>
-                    <div className='flex flex-wrap gap-[25px] justify-center'>
+                    <div className='flex flex-wrap sm:gap-[25px] gap-[10px] justify-center'>
                         {partnerData.map((partner) => (
-                            <div key={partner.id} className='h-[120px] lg:w-[20%] md:w-[25%] sm:w-[25%] w-[50%]  bg-slate-400 rounded-lg flex items-center justify-center'>
+                            <div key={partner.id} className='h-[120px] lg:w-[18%] md:w-[30%] sm:w-[48%] w-[48%]  bg-slate-400 rounded-lg flex items-center justify-center'>
                                 <img
                                     src={partner.img}
                                     alt={`Partner ${partner.id}`}
