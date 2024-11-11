@@ -1,24 +1,21 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component'; 
-import { ActiveWear } from '../Images/Images'; 
 
 const ActiveWearComponent = () => {
   return (
-    <div className='h-[220px] lg:h-[600px] md:h-[400px]'>
-      <LazyLoadImage
-        src={ActiveWear}
-        alt="Active Wear"
-        effect="blur" 
-        className='lg:h-[600px] w-full lg:object-cover '
-        style={{ 
-          position: 'absolute', 
-          top: 0, 
-          left: 0, 
-          zIndex: -1 
-        }}
+    <div className='relative h-[220px] lg:h-[600px] md:h-[400px]'>
+      {/* YouTube Video Background with iframe */}
+      <iframe
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        src="https://www.youtube.com/embed/tmJ5xlWRrl8?autoplay=1&loop=1&mute=1&playlist=tmJ5xlWRrl8"
+        frameBorder="0"
+        allow="autoplay; encrypted-media"
+        allowFullScreen
+        title="Background Video"
       />
-      <div className='lg:h-[600px] bg-black bg-opacity-30'>
-      </div>
+      
+      {/* Optional Overlay and Image */}
+      <div className='absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 z-10'></div>
     </div>
   );
 };

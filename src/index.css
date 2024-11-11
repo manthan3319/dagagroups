@@ -46,6 +46,59 @@ span.lazy-load-image-background.blur.lazy-load-image-loaded {
     width: 100% !important;
 }
 
+
+/* photo frame */
+/* Container for the whole frame */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  /* Heading styling */
+  .container h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Canvas styling */
+  canvas {
+    border: 2px solid #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields for image uploads */
+  .upload-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .upload-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .upload-container label {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+  }
+  
+  .upload-container input[type="file"] {
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.85em;
+  }
+  
+  
+
 @media only screen and (max-width: 768px) {
     .slider-item_viewdproduct {
         margin: 20px 0;

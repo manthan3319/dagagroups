@@ -4,7 +4,7 @@ import wallart from "./wallart.webp";
 import menuicon from "./menu-bar.png";
 import sliderbg1 from "./sliderbg1.jpg";
 import sliderbg2 from "./sliderbg2.jpg";
-import aboutusimg from "./aboutusimg.jpg";
+import aboutusimg from "./aboutusimg.png";
 import category1 from "./category1.jpg";
 import category2 from "./category2.jpg";
 import category3 from "./category3.jpg";
@@ -17,9 +17,32 @@ import ourmostpopuproduct4 from "./ourmostpopuproduct4.webp";
 import aboutus from "./aboutus.jpg";
 import aboutimg from "./aboutimg.jpg";
 import dagabanner from "./dagabanner.jpg";
-import galary1 from "./galary1.png"
+import galary1 from "./galary1.png";
+import logo from "./logo.jpg";
+import fabricfunctions from "./fabricfunctions.jpg";
+import FunctionalFabric1 from "./FunctionalFabric1.webp";
+import FunctionalFabric2 from "./FunctionalFabric2.webp";
+import FunctionalFabric3 from "./FunctionalFabric3.webp";
+import FunctionalFabric4 from "./FunctionalFabric4.webp";
+import FunctionalFabric5 from "./FunctionalFabric5.webp";
+import FunctionalFabric6 from "./FunctionalFabric6.png";
+import Hangtags1 from "./Hangtags1.jpg";
+import Hangtags2 from "./Hangtags2.jpg";
+import Hangtags3 from "./Hangtags3.jpg";
+
 
 export {
+    logo,
+    FunctionalFabric1,
+    FunctionalFabric2,
+    FunctionalFabric3,
+    FunctionalFabric4,
+    FunctionalFabric5,
+    FunctionalFabric6,
+    fabricfunctions,
+    Hangtags1,
+    Hangtags2,
+    Hangtags3,
     logowhite,
     galary1,
     bgoverlapping,

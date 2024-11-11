@@ -2,33 +2,33 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { ourmostpopuproduct1, ourmostpopuproduct2, ourmostpopuproduct3, ourmostpopuproduct4 } from '../Images/Images';
+import { category1, category2, category3, category4, ourmostpopuproduct1, ourmostpopuproduct2, ourmostpopuproduct3, ourmostpopuproduct4 } from '../Images/Images';
 
 const OurMostViewedProduct = () => {
     const products = [
         {
             id: 1,
-            title: 'Sportswear - Knits & Wovens Fabrics',
+            title: 'SSportswear - Knits & Wovens Fabrics',
             description: 'Solid',
-            img: ourmostpopuproduct1
+            img: category1
         },
         {
             id: 2,
-            title: 'Swimwear - Knits & Wovens Fabrics',
+            title: 'Outerwear / Jacket Fabrics',
             description: 'Solid',
-            img: ourmostpopuproduct2
+            img: category2
         },
         {
             id: 3,
-            title: 'Outerwear / Jacket Fabrics',
+            title: 'Active Blazer/Bottoms Fabrics',
             description: 'Solid',
-            img: ourmostpopuproduct3
+            img: category3
         },
         {
             id: 4,
-            title: 'Medical Scrubs Fabric',
+            title: 'Lining Fabrics',
             description: 'Solid',
-            img: ourmostpopuproduct4
+            img: category4
         },
     ];
 

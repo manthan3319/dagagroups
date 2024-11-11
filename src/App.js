@@ -9,6 +9,8 @@ import EventTradeShow from "./components/EventTradeShow/EventTradeShow";
 import Blogs from "./components/Blogs/Blogs";
 import Careers from "./components/Careers/Careers";
 import ContactUs from "./components/ContactUs/ContactUs";
+import FabricFunctions from "./components/FabricFunctions/FabricFunctions";
+import PhotoFrame from "./components/PhotoFrame/PhotoFrame";
 const App = () => {
   return (
     <BrowserRouter>
@@ -21,6 +23,8 @@ const App = () => {
         <Route path="/blogs" element={<Blogs />}/>
         <Route path="/career" element={<Careers />}/>
         <Route path="/contact" element={<ContactUs />}/>
+        <Route path="/fabricfunctions" element={<FabricFunctions />}/>
+        <Route path="/PhotoFrame" element={<PhotoFrame />}/>
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -8,25 +8,25 @@ const OurCategories = () => {
     const categories = [
         {
             id: 1,
-            title: 'Digital-Printed-Fabrics',
+            title: 'Sportswear - Knits & Wovens Fabrics',
             img: category1,
             link: '/enquire-sportswear'
         },
         {
             id: 2,
-            title: 'Lower Polyester Fabrics',
+            title: 'Outerwear / Jacket Fabrics',
             img: category2,
             link: '/enquire-casualwear'
         },
         {
             id: 3,
-            title: 'T SHIRT POLYESTER FABRICS',
+            title: 'Active Blazer/Bottoms Fabrics',
             img: category3,
             link: '/enquire-formalwear'
         },
         {
             id: 4,
-            title: 'READYMADE CURTAIN',
+            title: 'Lining Fabrics',
             img: category4,
             link: '/enquire-outdoorwear'
         }

@@ -17,30 +17,30 @@ const YearsOfExperience = () => {
 
           <div>
             <h1 className='sm:text-[55px] text-[45px] font-bold font-roboto'>
-              <CountUp end={813} duration={3} />+
+              <CountUp end={500} duration={3} />+
             </h1>
-            <p className='font-roboto font-bold sm:text-[25px] text-[20px]'>Unique Products</p>
+            <p className='font-roboto font-bold sm:text-[25px] text-[20px]'>MORE THAN IMPORTED FABRICS</p>
           </div>
 
           <div>
             <h1 className='sm:text-[55px] text-[45px] font-bold font-roboto'>
-              <CountUp end={18} duration={3} />+
+              <CountUp end={20} duration={3} />+
             </h1>
             <p className='font-roboto font-bold sm:text-[25px] text-[20px]'>Years Of Experience</p>
           </div>
 
           <div>
             <h1 className='sm:text-[55px] text-[45px] font-bold font-roboto'>
-              <CountUp end={2500} duration={3} />+
+              <CountUp end={100} duration={3} />%
             </h1>
-            <p className='font-roboto font-bold sm:text-[25px] text-[20px]'>Satisfied Customers</p>
+            <p className='font-roboto font-bold sm:text-[25px] text-[20px]'>FOCUS ON QUALITY</p>
           </div>
 
           <div>
             <h1 className='sm:text-[55px] text-[45px] font-bold font-roboto'>
-              <CountUp end={7} duration={3} />+
+              <CountUp end={100} duration={3} />%
             </h1>
-            <p className='font-roboto font-bold sm:text-[25px] text-[20px]'>Country Presence</p>
+            <p className='font-roboto font-bold sm:text-[25px] text-[20px]'>SHORT TIME DELIVERY</p>
           </div>
         </div>
       </div>

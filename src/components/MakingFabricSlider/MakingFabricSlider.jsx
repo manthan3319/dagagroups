@@ -61,7 +61,7 @@ const MakingFabricSlider = () => {
   };
 
   return (
-    <div className='md:h-[650px] bg-[#1F1F1F] overflow-hidden w-[100%] relative'>
+    <div className='md:h-[900px] bg-[#1F1F1F] overflow-hidden w-[100%] relative'>
       <Slider {...settings}>
         {sliderData.map((slide, index) => (
           <motion.div
@@ -75,7 +75,7 @@ const MakingFabricSlider = () => {
               src={slide.image}
               alt={slide.alt}
               effect="blur"
-              className='md:h-[650px] object-fill w-[95%] m-auto'
+              className='md:h-[900px] object-fill w-[95%] m-auto'
             />
           </motion.div>
         ))}
