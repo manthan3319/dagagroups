@@ -17,9 +17,9 @@ const YearsOfExperience = () => {
 
           <div>
             <h1 className='sm:text-[55px] text-[45px] font-bold font-roboto'>
-              <CountUp end={500} duration={3} />+
+              <CountUp end={4500} duration={3} />+
             </h1>
-            <p className='font-roboto font-bold sm:text-[25px] text-[20px]'>MORE THAN IMPORTED FABRICS</p>
+            <p className='font-roboto font-bold sm:text-[25px] text-[20px]'>Satisfied Customers</p>
           </div>
 
           <div>
@@ -40,7 +40,7 @@ const YearsOfExperience = () => {
             <h1 className='sm:text-[55px] text-[45px] font-bold font-roboto'>
               <CountUp end={100} duration={3} />%
             </h1>
-            <p className='font-roboto font-bold sm:text-[25px] text-[20px]'>SHORT TIME DELIVERY</p>
+            <p className='font-roboto font-bold sm:text-[25px] text-[20px]'>On Time Delivery</p>
           </div>
         </div>
       </div>
