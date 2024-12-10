@@ -92,7 +92,7 @@ const OurCategories = () => {
                     <div className='lg:max-w-[1440px] px-[20px] m-auto mt-[50px]'>
                         <Slider {...settings}>
                             {categories.map((category) => (
-                                <div key={category.id} className='px-[15px]'>
+                                <div key={category.id} className='m-[15px]'>
                                     <div>
                                         <div
                                             className='img h-[450px] bg-cover bg-center bg-slate-500'

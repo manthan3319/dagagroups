@@ -14,8 +14,8 @@ const HomeContactUs = () => {
                         <div className='inquiryform 2xl:w-[28%] xl:w-[48%] lg:w-[48%]  w-[100%] h-[200px] flex flex-col justify-center border-[1px] border-black gap-[7px] p-[30px] rounded-lg'>
                             <p className='text-[45px]'><i className="fa fa-phone-square" aria-hidden="true"></i></p>
                             <div>
-                                <p className='text-[18px] font-roboto mb-[5px]'>+91 99047 55595</p>
-                                <p className='text-[18px] font-roboto'>+91 94266 75595</p>
+                                <p className='text-[18px] font-roboto mb-[5px]'>+91 98250 55595</p>
+                                <p className='text-[18px] font-roboto'>+91 72290 55595</p>
                             </div>
                         </div>
 

@@ -67,7 +67,7 @@ const Navbar = () => {
                             <div className='flex sm:flex-row flex-col sm:gap-[25px] gap-y-3'>
                                 <Link className='flex flex-row gap-[8px] items-center justify-center text-white font-tomorrow text-[18px]'>
                                     <span><i className="fa fa-phone" aria-hidden="true"></i></span>
-                                    <span>+91 99047 55595</span>
+                                    <span>+91 98250 55595</span>
                                 </Link>
                                 <Link className='flex flex-row gap-[8px] items-center justify-center text-white font-tomorrow text-[18px]'>
                                     <span><i className="fa fa-envelope" aria-hidden="true"></i></span>
