@@ -1,20 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { partner, partner2 } from '../Images/Images';
 
 const OurPartners = () => {
 
     const partnerData = [
-        { id: 1, img: 'https://via.placeholder.com/150' },
-        { id: 2, img: 'https://via.placeholder.com/150' },
-        { id: 3, img: 'https://via.placeholder.com/150' },
-        { id: 4, img: 'https://via.placeholder.com/150' },
-        { id: 5, img: 'https://via.placeholder.com/150' },
-        { id: 6, img: 'https://via.placeholder.com/150' },
-        { id: 7, img: 'https://via.placeholder.com/150' },
-        { id: 8, img: 'https://via.placeholder.com/150' },
-        { id: 9, img: 'https://via.placeholder.com/150' },
-        { id: 10, img: 'https://via.placeholder.com/150' },
-        { id: 11, img: 'https://via.placeholder.com/150' },
-        { id: 12, img: 'https://via.placeholder.com/150' }
+        { id: 1, img: partner },
+        { id: 2, img: partner2 },
     ];
 
     return (

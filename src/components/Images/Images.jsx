@@ -18,7 +18,7 @@ import aboutus from "./aboutus.jpg";
 import aboutimg from "./aboutimg.jpg";
 import dagabanner from "./dagabanner.jpg";
 import galary1 from "./galary1.png";
-import logo from "./logo.jpg";
+import logo from "./daga group.svg";
 import fabricfunctions from "./fabricfunctions.jpg";
 import FunctionalFabric1 from "./FunctionalFabric1.webp";
 import FunctionalFabric2 from "./FunctionalFabric2.webp";
@@ -29,9 +29,15 @@ import FunctionalFabric6 from "./FunctionalFabric6.png";
 import Hangtags1 from "./Hangtags1.jpg";
 import Hangtags2 from "./Hangtags2.jpg";
 import Hangtags3 from "./Hangtags3.jpg";
-
+import dagaBlack from "./logo b.svg";
+import logoWhite from "./daga-grouop white.svg";
+import partner from "./partner1.jpg";
+import partner2 from "./partner2.jpg";
 
 export {
+    partner2,
+    partner,
+    logoWhite,
     logo,
     FunctionalFabric1,
     FunctionalFabric2,

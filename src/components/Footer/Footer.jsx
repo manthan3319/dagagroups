@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom';
-import { logowhite } from '../Images/Images'
+import { logoWhite, logowhite } from '../Images/Images'
 
 const Footer = () => {
     const location = useLocation();
@@ -25,7 +25,7 @@ const Footer = () => {
             <div className='lg:max-w-[1440px] px-[20px] m-auto'>
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-[50px]'>
                     <div>
-                        <Link><img src={logowhite} className='' /></Link>
+                        <Link><img src={logoWhite} className='w-[150px]' /></Link>
                         <p className='text-white mt-[15px] font-tomorrow'>We are committed to transform ourselves into a renowned textile company across the globe by establishing strong network of clients with support of our young & highly talented professionals and having turnover of 500 Crores by the year 2025.</p>
                     </div>
 
@@ -74,6 +74,17 @@ const Footer = () => {
 
                             <div className='transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565] flex flex-row items-center gap-[15px]'>
                                 <div>
+                                    <Link className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-map-marker" aria-hidden="true"></i></Link>
+                                </div>
+                                <div>
+                                    <p className='font-roboto text-white text-[18px]'>X -941, SATSANG MARG,NEAR JHEEL CHOWK <br></br>
+                                        GANDHI NAGAR DELHI - 110031
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className='transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565] flex flex-row items-center gap-[15px]'>
+                                <div>
                                     <Link className='text-[30px] text-white '><i class="fa fa-phone-square" aria-hidden="true"></i></Link>
                                 </div>
                                 <div className='flex flex-col gap-[5px]'>
@@ -87,8 +98,8 @@ const Footer = () => {
             </div>
 
             <div className='text-center pt-[25px] pb-[25px] border-t-[1px] mt-[25px]'>
-                    <Link className='text-white font-tomorrow text-[20px]' to="https://brightensolutions.com/">CopyRight © Brighten Solutions</Link>
-                </div>
+                <Link className='text-white font-tomorrow text-[20px]' to="https://brightensolutions.com/">CopyRight © Brighten Solutions</Link>
+            </div>
         </div>
     )
 }
