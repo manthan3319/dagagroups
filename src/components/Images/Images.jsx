@@ -33,8 +33,10 @@ import dagaBlack from "./logo b.svg";
 import logoWhite from "./daga-grouop white.svg";
 import partner from "./partner1.jpg";
 import partner2 from "./partner2.jpg";
+import partner3 from "./client3.svg";
 
 export {
+    partner3,
     partner2,
     partner,
     logoWhite,

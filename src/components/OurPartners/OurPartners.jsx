@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { partner, partner2 } from '../Images/Images';
+import { partner, partner2, partner3 } from '../Images/Images';
 
 const OurPartners = () => {
 
     const partnerData = [
         { id: 1, img: partner },
         { id: 2, img: partner2 },
+        { id: 3, img: partner3 },
     ];
 
     return (
