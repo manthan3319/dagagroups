@@ -63,23 +63,29 @@ const Footer = () => {
                                 <Link className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-envelope-o" aria-hidden="true"></i></Link>
                             </div>
 
-                            <div className='transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565] flex flex-row items-center gap-[15px]'>
-                                <div>
-                                    <Link className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-map-marker" aria-hidden="true"></i></Link>
-                                </div>
-                                <div>
-                                    <p className='font-roboto text-white text-[18px]'>6037, VIKAS LOGISTICS PARK, <br></br>KUMBHARIA, SURAT, GUJARAT 395010</p>
+                            <div className='transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565] '>
+                                <p className='text-white mb-[10px]'>HEAD OFFICE</p>
+                                <div className='flex flex-row items-center gap-[15px]'>
+                                    <div>
+                                        <Link className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-map-marker" aria-hidden="true"></i></Link>
+                                    </div>
+                                    <div>
+                                        <p className='font-roboto text-white text-[18px]'>6037, VIKAS LOGISTICS PARK, <br></br>KUMBHARIA, SURAT, GUJARAT 395010</p>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div className='transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565] flex flex-row items-center gap-[15px]'>
-                                <div>
-                                    <Link className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-map-marker" aria-hidden="true"></i></Link>
-                                </div>
-                                <div>
-                                    <p className='font-roboto text-white text-[18px]'>X -941, SATSANG MARG,NEAR JHEEL CHOWK <br></br>
-                                        GANDHI NAGAR DELHI - 110031
-                                    </p>
+                            <div className='transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565] '>
+                                <p className='text-white mb-[10px]'>ASSOCIATE OFFICE</p>
+                                <div className='flex flex-row items-center gap-[15px]'>
+                                    <div>
+                                        <Link className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-map-marker" aria-hidden="true"></i></Link>
+                                    </div>
+                                    <div>
+                                        <p className='font-roboto text-white text-[18px]'>X -941, SATSANG MARG,NEAR JHEEL CHOWK <br></br>
+                                            GANDHI NAGAR DELHI - 110031
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
 

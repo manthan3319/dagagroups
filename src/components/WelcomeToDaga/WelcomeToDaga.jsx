@@ -55,7 +55,7 @@ const WelcomeToDaga = () => {
                         <p className='font-tomorrow text-[18px] font-medium'>SPIRIT OF FABRICS</p>
                         <div className='mt-[15px] flex flex-col gap-y-[10px]'>
                             <p className='font-roboto font-normal text-[18px] leading-[30px]'>WE ARE WHOLESALERS, MANUFACTURERS,
-                                EXPORTER OF FABRICS & READY-MADE CURTAINS.</p>
+                                EXPORTER OF FABRICS.</p>
                             <p className='font-roboto font-normal text-[18px] leading-[30px]'>AT DAGA GROUP, WE PERFORM IN UNISON BY FOLLOWING OUR VALUES AND ETHICAL GUIDELINES CODE OF CONDUCT AS A SOURCE OF GUIDANCE AND INSPIRATION, WHICH ENABLE US TO ACHIEVE OUR VISION.</p>
                         </div>
 
