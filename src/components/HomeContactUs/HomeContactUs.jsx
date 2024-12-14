@@ -31,7 +31,7 @@ const HomeContactUs = () => {
                         <div className='inquiryform 2xl:w-[28%] xl:w-[100%] lg:w-[100%]  w-[100%] h-[200px] flex flex-col justify-center border-[1px] border-black gap-[7px] p-[30px] rounded-lg'>
                             <p className='text-[45px]'><i className="fa fa-envelope" aria-hidden="true"></i></p>
                             <div>
-                                <p className='text-[18px] font-roboto'>hello@dagagroups.com</p>
+                                <p className='text-[18px] font-roboto'>Info@dagagroups.com</p>
                             </div>
                         </div>
                     </div>

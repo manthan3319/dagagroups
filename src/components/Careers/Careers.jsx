@@ -34,7 +34,7 @@ const Careers = () => {
                         <Link className='inline-block bg-black text-white px-[25px] py-[10px] rounded-[5px] '>APPLY NOW</Link>
                     </div>
 
-                    <Link className='sm:text-[20px] text-[16px] font-roboto'>Mail Us At <span>hello@dagagroups.com</span></Link>
+                    <Link className='sm:text-[20px] text-[16px] font-roboto'>Mail Us At <span>Info@dagagroups.com</span></Link>
                 </div>
             </div>
         </div>

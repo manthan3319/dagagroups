@@ -71,7 +71,7 @@ const Navbar = () => {
                                 </Link>
                                 <Link className='flex flex-row gap-[8px] items-center justify-center text-white font-tomorrow text-[18px]'>
                                     <span><i className="fa fa-envelope" aria-hidden="true"></i></span>
-                                    <span>hello@dagagroups.com</span>
+                                    <span>Info@dagagroups.com</span>
                                 </Link>
                             </div>
 
