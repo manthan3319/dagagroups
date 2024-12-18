@@ -79,7 +79,7 @@ const Footer = () => {
                                     <Link className='text-[30px] text-white '><i class="fa fa-phone-square" aria-hidden="true"></i></Link>
                                 </div>
                                 <div className='flex flex-col gap-[5px]'>
-                                    <p className='font-roboto text-white text-[18px]'>+91 98735 64378 </p>
+                                    <p className='font-roboto text-white text-[18px]'>+91 93183 73466 </p>
                                 </div>
                             </div>
 
