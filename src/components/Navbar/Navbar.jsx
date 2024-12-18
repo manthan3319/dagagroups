@@ -143,7 +143,7 @@ const Navbar = () => {
                     <div className='p-[20px]'>
                         <ul className='flex flex-col gap-y-[25px]'>
                             {navItems.map((item, index) => (
-                                <motion.li
+                                <div
                                     key={index}
                                     className={`text-[18px] font-medium font-tomorrow transition duration-300 ease-in-out ${activeLink === item.path ? 'text-[#656565]' : 'text-black'} hover:text-[#656565] hover:scale-105 ${item.name === 'Contact Us' ? 'bg-[#1D4665] px-4 py-2 rounded' : 'text-black'}`}
                                     initial={{ opacity: 0, scale: 0.8 }}
@@ -153,7 +153,7 @@ const Navbar = () => {
                                     <Link to={item.path} className={`${item.name === 'Contact Us' ? 'text-white' : ''}`}>
                                         {item.name}
                                     </Link>
-                                </motion.li>
+                                </div>
                             ))}
                         </ul>
                     </div>
