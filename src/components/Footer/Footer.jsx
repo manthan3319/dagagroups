@@ -73,6 +73,17 @@ const Footer = () => {
                                         <p className='font-roboto text-white text-[18px]'>6037, VIKAS LOGISTICS PARK, <br></br>KUMBHARIA, SURAT, GUJARAT 395010</p>
                                     </div>
                                 </div>
+
+                                <div className='transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565] flex flex-row items-center gap-[15px]'>
+                                <div>
+                                    <Link className='text-[30px] text-white '><i class="fa fa-phone-square" aria-hidden="true"></i></Link>
+                                </div>
+                                <div className='flex flex-col gap-[5px]'>
+                                    <p className='font-roboto text-white text-[18px]'>+91 98735 64378 </p>
+                                </div>
+                            </div>
+
+
                             </div>
 
                             <div className='transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565] '>
