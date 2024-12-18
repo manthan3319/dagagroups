@@ -75,13 +75,15 @@ const Footer = () => {
                                 </div>
 
                                 <div className='transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565] flex flex-row items-center gap-[15px]'>
-                                <div>
-                                    <Link className='text-[30px] text-white '><i class="fa fa-phone-square" aria-hidden="true"></i></Link>
+                                    <div>
+                                        <Link className='text-[30px] text-white '><i class="fa fa-phone-square" aria-hidden="true"></i></Link>
+                                    </div>
+                                    <div className='flex flex-col gap-[5px]'>
+                                        {/* Clickable phone number */}
+                                        <Link href="tel:+919318373466" className='font-roboto text-white text-[18px] hover:underline'>+91 93183 73466</Link>
+                                    </div>
                                 </div>
-                                <div className='flex flex-col gap-[5px]'>
-                                    <p className='font-roboto text-white text-[18px]'>+91 93183 73466 </p>
-                                </div>
-                            </div>
+
 
 
                             </div>
@@ -105,8 +107,9 @@ const Footer = () => {
                                     <Link className='text-[30px] text-white '><i class="fa fa-phone-square" aria-hidden="true"></i></Link>
                                 </div>
                                 <div className='flex flex-col gap-[5px]'>
-                                    <p className='font-roboto text-white text-[18px]'>+91 98250 55595 </p>
-                                    <p className='font-roboto text-white text-[18px]'>+91 72290 55595 </p>
+                                    {/* Clickable phone numbers */}
+                                    <Link href="tel:+919825055595" className='font-roboto text-white text-[18px] hover:underline'>+91 98250 55595</Link>
+                                    <Link href="tel:+917229055595" className='font-roboto text-white text-[18px] hover:underline'>+91 72290 55595</Link>
                                 </div>
                             </div>
                         </div>
