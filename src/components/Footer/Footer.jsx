@@ -56,14 +56,13 @@ const Footer = () => {
 
                         <div className='flex flex-col gap-[25px]'>
                             <div className='flex flex-row gap-[15px]'>
-                                <Link className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-instagram" aria-hidden="true"></i></Link>
-                                <Link className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-facebook-official" aria-hidden="true"></i></Link>
-                                <Link className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-telegram" aria-hidden="true"></i></Link>
-                                <Link className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-youtube-play" aria-hidden="true"></i></Link>
-                                <Link className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-envelope-o" aria-hidden="true"></i></Link>
+                                <Link to="https://www.instagram.com/daga_group.official/" target="_blank" className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-instagram" aria-hidden="true"></i></Link>
+                                <Link to="https://www.facebook.com/dagaagroup" target="_blank" className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-facebook-official" aria-hidden="true"></i></Link>
+                                <Link to="https://youtu.be/tmJ5xlWRrl8?si=3NO3LK3xBFqNDX2c" target="_blank" className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565]'><i class="fa fa-youtube-play" aria-hidden="true"></i></Link>
                             </div>
 
                             <div className='transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565] '>
+                                <Link to="https://www.google.com/maps/dir/21.140883,72.7825035/daga+group/@21.1658384,72.7542285,32432m/data=!3m2!1e3!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3be04fba0648af77:0x1e94f42dca286fea!2m2!1d72.8885088!2d21.1858099?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                                 <p className='text-white mb-[10px]'>HEAD OFFICE</p>
                                 <div className='flex flex-row items-center gap-[15px]'>
                                     <div>
@@ -73,21 +72,17 @@ const Footer = () => {
                                         <p className='font-roboto text-white text-[18px]'>6037, VIKAS LOGISTICS PARK, <br></br>KUMBHARIA, SURAT, GUJARAT 395010</p>
                                     </div>
                                 </div>
+                                </Link>
 
                                 <div className='transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565] flex flex-row items-center gap-[15px] mt-[10px]'>
                                     <div>
                                         <Link className='text-[30px] text-white '><i class="fa fa-phone-square" aria-hidden="true"></i></Link>
                                     </div>
                                     <div className='flex flex-col gap-[5px]'>
-                                        <Link href="tel:+919825055595" className='font-roboto text-white text-[18px] hover:underline'>+91 98250 55595</Link>
-                                        <Link href="tel:+917229055595" className='font-roboto text-white text-[18px] hover:underline'>+91 72290 55595</Link>
+                                        <Link to="tel:+919825055595" className='font-roboto text-white text-[18px] hover:underline'>+91 98250 55595</Link>
+                                        <Link to="tel:+917229055595" className='font-roboto text-white text-[18px] hover:underline'>+91 72290 55595</Link>
                                     </div>
                                 </div>
-
-
-
-
-
                             </div>
 
                             <div className='transition duration-300 ease-in-out hover:scale-105 hover:text-[#656565] '>
@@ -108,8 +103,7 @@ const Footer = () => {
                                     <Link className='text-[30px] text-white '><i class="fa fa-phone-square" aria-hidden="true"></i></Link>
                                 </div>
                                 <div className='flex flex-col gap-[5px]'>
-                                    {/* Clickable phone number */}
-                                    <Link href="tel:+919318373466" className='font-roboto text-white text-[18px] hover:underline'>+91 93183 73466</Link>
+                                    <Link to="tel:+919318373466" className='font-roboto text-white text-[18px] hover:underline'>+91 93183 73466</Link>
                                 </div>
                             </div>
 

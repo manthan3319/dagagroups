@@ -45,57 +45,64 @@ const Navbar = () => {
     };
 
     const { ref, inView } = useInView({
-        triggerOnce: true, 
-        threshold: 0.3, 
+        triggerOnce: true,
+        threshold: 0.3,
     });
 
     const handleLogoClick = () => {
-        window.scrollTo(0, 0); 
+        window.scrollTo(0, 0);
     };
 
     return (
         <motion.div
             className={`sticky top-0 z-[9999999999] ${isScrolled ? 'bg-white shadow-md' : ''}`}
             style={{ transition: 'top 0.3s ease, position 0.3s ease' }}
-            animate={{ top: isScrolled ? '0' : '-100px' }} 
-            initial={{ top: '-100px' }} 
+            animate={{ top: isScrolled ? '0' : '-100px' }}
+            initial={{ top: '-100px' }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
         >
-                <div className='bg-black py-[20px] md:block hidden'>
-                    <div className='lg:max-w-[1440px] px-[20px] m-auto'>
-                        <div className='flex sm:flex-row flex-col justify-between gap-y-3'>
-                            <div className='flex sm:flex-row flex-col sm:gap-[25px] gap-y-3'>
-                                {/* <Link className='flex flex-row gap-[8px] items-center justify-center text-white font-tomorrow text-[18px]'>
-                                    <span><i className="fa fa-phone" aria-hidden="true"></i></span>
-                                    <span>+91 98250 55595</span>
-                                </Link> */}
-                                <Link className='flex flex-row gap-[8px] items-center justify-center text-white font-tomorrow text-[18px]'>
-                                    <span><i className="fa fa-envelope" aria-hidden="true"></i></span>
-                                    <span>Info@dagagroups.com</span>
-                                </Link>
-                            </div>
+            <div className="bg-black py-[20px] md:block hidden">
+                <div className="lg:max-w-[1440px] px-[20px] m-auto">
+                    <div className="flex sm:flex-row flex-col justify-between gap-y-3">
+                        <div className="flex sm:flex-row flex-col sm:gap-[25px] gap-y-3">
+                            <Link
+                                to="mailto:Info@dagagroups.com"
+                                className="flex flex-row gap-[8px] items-center justify-center text-white font-tomorrow text-[18px]"
+                            >
+                                <span>
+                                    <i className="fa fa-envelope" aria-hidden="true"></i>
+                                </span>
+                                <span>Info@dagagroups.com</span>
+                            </Link>
+                        </div>
 
-                            <div className='flex flex-row gap-[25px] justify-center'>
-                                <Link className='flex flex-row gap-[8px] items-center justify-center text-[30px] text-white'>
-                                    <i className="fa fa-instagram" aria-hidden="true"></i>
-                                </Link>
-                                <Link className='flex flex-row gap-[8px] items-center justify-center text-[30px] text-white'>
-                                    <i className="fa fa-linkedin-square" aria-hidden="true"></i>
-                                </Link>
-                                <Link className='flex flex-row gap-[8px] items-center justify-center text-[30px] text-white'>
-                                    <i className="fa fa-facebook-square" aria-hidden="true"></i>
-                                </Link>
-                            </div>
+                        <div className="flex flex-row gap-[25px] justify-center">
+                            <Link
+                                to="https://www.instagram.com/daga_group.official/"
+                                target="_blank"
+                                className="flex flex-row gap-[8px] items-center justify-center text-[30px] text-white"
+                            >
+                                <i className="fa fa-instagram" aria-hidden="true"></i>
+                            </Link>
+                            <Link
+                                to="https://www.facebook.com/dagaagroup"
+                                target="_blank"
+                                className="flex flex-row gap-[8px] items-center justify-center text-[30px] text-white"
+                            >
+                                <i className="fa fa-facebook-square" aria-hidden="true"></i>
+                            </Link>
                         </div>
                     </div>
                 </div>
+            </div>
+
 
             {/* Main Navbar */}
             <div className={`border-b-[1px] hidden lg:block ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`} style={{ transition: 'top 0.3s ease, position 0.3s ease' }}>
                 <div className='lg:max-w-[1440px] px-[20px] m-auto py-[20px]'>
                     <div className='flex flex-row justify-between items-center'>
                         <div>
-                            <Link onClick={handleLogoClick}      className='font-bold text-[30px] font-tomorrow'>
+                            <Link onClick={handleLogoClick} className='font-bold text-[30px] font-tomorrow'>
                                 <img src={logo} alt='logo' className='w-[150px]' />
                             </Link>
                         </div>
