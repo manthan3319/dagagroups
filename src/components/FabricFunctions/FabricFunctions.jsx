@@ -17,17 +17,17 @@ import {
 const FabricFunctions = () => {
   const { ref: sectionRef1, inView: inView1 } = useInView({
     triggerOnce: true,
-    threshold: 0.1,  // Trigger animation when the section comes into view
+    threshold: 0.05, // Lower threshold for better mobile compatibility
   });
 
   const { ref: sectionRef2, inView: inView2 } = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.05,
   });
 
   const { ref: sectionRef3, inView: inView3 } = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.05,
   });
 
   useEffect(() => {
@@ -69,7 +69,7 @@ const FabricFunctions = () => {
           Functional Fabric, Yarn and Finishes
         </h1>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5'>
-          {[ 
+          {[
             { id: 1, img: FunctionalFabric1, title: 'Anti Microbial/Anti Odour' },
             { id: 2, img: FunctionalFabric2, title: 'Anti Static' },
             { id: 3, img: FunctionalFabric3, title: 'UPF Sun Protection' },
