@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { partner, partner2, partner3 } from '../Images/Images';
+import { ALCIS, Ipllogo, Lotto_Sport_Italia_logo, partner, partner2, partner3, Parx, shivnaresh, sportsun } from '../Images/Images';
 
 const OurPartners = () => {
 
     const partnerData = [
         { id: 1, img: partner },
         { id: 2, img: partner2 },
-        { id: 3, img: partner3 },
+        { id: 3, img: sportsun },
+        { id: 4, img: shivnaresh },
+        { id: 5, img: Ipllogo },
+        { id: 6, img: ALCIS },
+        { id: 7, img: Parx },
+        { id: 8, img: Lotto_Sport_Italia_logo },
     ];
 
     return (

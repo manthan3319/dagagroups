@@ -34,8 +34,21 @@ import logoWhite from "./daga-grouop white.svg";
 import partner from "./partner1.jpg";
 import partner2 from "./partner2.jpg";
 import partner3 from "./client3.svg";
+import shivnaresh from "./shiv-naresh.jpeg";
+import sportsun from "./sportsun.webp";
+import Ipllogo from "./IPL-PNG-520x355.png";
+import ALCIS from "./ALCIS.avif";
+import Parx from "./parx.jpeg";
+import Lotto_Sport_Italia_logo from "./Lotto_Sport_Italia_logo.svg.png";
+
 
 export {
+    Lotto_Sport_Italia_logo,
+    Parx,
+    ALCIS,
+    Ipllogo,
+    sportsun,
+    shivnaresh,
     partner3,
     partner2,
     partner,
