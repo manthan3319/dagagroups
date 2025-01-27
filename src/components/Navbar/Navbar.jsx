@@ -16,9 +16,9 @@ const Navbar = () => {
         { name: 'About Us', path: '/aboutus' },
         { name: 'Our Product', path: '/products' },
         { name: 'Event & Trade Show', path: '/events' },
-        { name: 'Blogs', path: '/blogs' },
-        { name: 'Career', path: '/career' },
         { name: 'Fabric Functions', path: '/fabricfunctions' },
+        { name: 'Career', path: '/career' },
+        { name: 'Blogs', path: '/blogs' },
         { name: 'Contact Us', path: '/contact' },
     ];
 
@@ -61,7 +61,7 @@ const Navbar = () => {
             initial={{ top: '-100px' }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
         >
-            <div className="bg-black py-[20px] md:block hidden">
+            {/* <div className="bg-black py-[20px] md:block hidden">
                 <div className="lg:max-w-[1440px] px-[20px] m-auto">
                     <div className="flex sm:flex-row flex-col justify-between gap-y-3">
                         <div className="flex sm:flex-row flex-col sm:gap-[25px] gap-y-3">
@@ -94,7 +94,7 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
             {/* Main Navbar */}

@@ -40,9 +40,10 @@ import Ipllogo from "./IPL-PNG-520x355.png";
 import ALCIS from "./ALCIS.avif";
 import Parx from "./parx.jpeg";
 import Lotto_Sport_Italia_logo from "./Lotto_Sport_Italia_logo.svg.png";
-
+import Whatshapp from "./whatsapp.png"
 
 export {
+    Whatshapp,
     Lotto_Sport_Italia_logo,
     Parx,
     ALCIS,

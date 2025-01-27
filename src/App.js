@@ -13,7 +13,7 @@ import FabricFunctions from "./components/FabricFunctions/FabricFunctions";
 import PhotoFrame from "./components/PhotoFrame/PhotoFrame";
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter >
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -27,6 +27,7 @@ const App = () => {
         <Route path="/PhotoFrame" element={<PhotoFrame />}/>
       </Routes>
       <Footer />
+        
     </BrowserRouter>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom';
-import { logoWhite, logowhite } from '../Images/Images'
+import { logoWhite } from '../Images/Images'
 
 const Footer = () => {
     const location = useLocation();
@@ -115,6 +115,8 @@ const Footer = () => {
             <div className='text-center pt-[25px] pb-[25px] border-t-[1px] mt-[25px]'>
                 <Link className='text-white font-tomorrow text-[20px]' to="https://brightensolutions.com/">CopyRight © Brighten Solutions</Link>
             </div>
+          
+
         </div>
     )
 }
