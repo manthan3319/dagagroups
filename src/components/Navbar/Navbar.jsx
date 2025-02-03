@@ -103,7 +103,7 @@ const Navbar = () => {
                     <div className='flex flex-row justify-between items-center'>
                         <div>
                             <Link onClick={handleLogoClick} className='font-bold text-[30px] font-tomorrow'>
-                                <img src={logo} alt='logo' className='w-[150px]' />
+                                <img src={logo} alt='logo' className='w-[300px]' />
                             </Link>
                         </div>
 
@@ -133,12 +133,11 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Mobile Navbar */}
             <div className='lg:hidden block px-[20px] py-[25px] border-b-[1px] border-black sticky top-0 bg-white z-[9999]' style={{ transition: 'top 0.3s ease, position 0.3s ease' }}>
                 <div className='flex justify-between items-center'>
                     <div>
                         <Link to="/" className='font-bold text-[30px] font-tomorrow'>
-                            <img src={logo} alt='logo' className='w-[150px]' />
+                            <img src={logo} alt='logo' className='w-[300px]' />
                         </Link>
                     </div>
                     <div>
@@ -153,11 +152,8 @@ const Navbar = () => {
                                 <div
                                     key={index}
                                     className={`text-[18px] font-medium font-tomorrow transition duration-300 ease-in-out ${activeLink === item.path ? 'text-[#656565]' : 'text-black'} hover:text-[#656565] hover:scale-105 ${item.name === 'Contact Us' ? 'bg-[#1D4665] px-4 py-2 rounded' : 'text-black'}`}
-                                    initial={{ opacity: 0, scale: 0.8 }}
-                                    animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.8 }}
-                                    transition={{ delay: index * 0.1, duration: 0.5 }}
                                 >
-                                    <Link to={item.path} className={`${item.name === 'Contact Us' ? 'text-white' : ''}`}>
+                                    <Link to={item.path} onClick={toggleDrawer} className={`${item.name === 'Contact Us' ? 'text-white' : ''}`}>
                                         {item.name}
                                     </Link>
                                 </div>
@@ -165,6 +161,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                 </Drawer>
+
             </div>
         </motion.div>
     );

@@ -1,87 +1,98 @@
-import React, { useState } from 'react';
-import Slider from 'react-slick';
-import { motion } from 'framer-motion';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
-import { sliderbg1, sliderbg2 } from '../Images/Images';
+import { useState, useEffect } from "react"
+import { motion, AnimatePresence } from "framer-motion"
+import { LazyLoadImage } from "react-lazy-load-image-component"
+import "react-lazy-load-image-component/src/effects/blur.css"
+import { slider1, slider2, slider3, slider4, slider5, slider6, slider7 } from "../Images/Images"
 
 const sliderData = [
-  {
-    id: 1,
-    image: sliderbg1,
-    alt: 'Fabric Slider 1',
-    heading: 'High-Quality Fabrics',
-    description: 'We offer the best quality fabrics for all your needs.',
-    animationType: 'fade',
-  },
-  {
-    id: 2,
-    image: sliderbg2,
-    alt: 'Fabric Slider 2',
-    heading: 'Stylish Designs',
-    description: 'Modern and trendy fabric designs available.',
-    animationType: 'fade',
-  },
-];
-
-const PrevArrow = ({ onClick }) => (
-  <div className="absolute top-[43%] left-[0px] z-10 cursor-pointer text-white bg-black p-[10px]" onClick={onClick}>
-    &#10094;
-  </div>
-);
-
-const NextArrow = ({ onClick }) => (
-  <div className="absolute top-[43%] right-[0] z-10 cursor-pointer text-white  bg-black p-[10px]" onClick={onClick}>
-    &#10095;
-  </div>
-);
+  { id: 7, image: slider7, alt: "Fabric Slider 1" },
+  { id: 1, image: slider1, alt: "Fabric Slider 1" },
+  { id: 2, image: slider2, alt: "Fabric Slider 2" },
+  { id: 3, image: slider3, alt: "Fabric Slider 3" },
+  { id: 4, image: slider4, alt: "Fabric Slider 4" },
+  { id: 5, image: slider5, alt: "Fabric Slider 5" },
+  { id: 6, image: slider6, alt: "Fabric Slider 6" },
+]
 
 const MakingFabricSlider = () => {
-  const [currentSlide, setCurrentSlide] = useState(0); 
+  const [currentSlide, setCurrentSlide] = useState(0)
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 1000, 
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000, 
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
-  };
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % sliderData.length)
+    }, 3500)
+
+    return () => clearInterval(timer)
+  }, [])
 
   const animationVariants = {
-    fade: {
-      hidden: { opacity: 0 },
-      visible: { opacity: 1, transition: { duration: 1.5, ease: 'easeInOut' } }, 
+    enter: (direction) => ({
+      x: direction > 0 ? "100%" : "-100%",
+      opacity: 0,
+    }),
+    center: {
+      zIndex: 1,
+      x: 0,
+      opacity: 1,
     },
-  };
+    exit: (direction) => ({
+      zIndex: 0,
+      x: direction < 0 ? "100%" : "-100%",
+      opacity: 0,
+    }),
+  }
+
+  const direction = 1
 
   return (
-    <div className='md:h-[900px] bg-[#1F1F1F] overflow-hidden w-[100%] relative'>
-      <Slider {...settings}>
-        {sliderData.map((slide, index) => (
-          <motion.div
-            key={slide.id}
-            initial="hidden"
-            animate={currentSlide === index ? "visible" : "hidden"} 
-            variants={animationVariants[slide.animationType]}
-            className='relative w-[90%] m-auto'
-          >
-            <LazyLoadImage
-              src={slide.image}
-              alt={slide.alt}
-              effect="blur"
-              className='md:h-[900px] object-fill w-[95%] m-auto'
-            />
-          </motion.div>
-        ))}
-      </Slider>
-    </div>
-  );
-};
+    <div className="relative w-full overflow-hidden bg-[#1F1F1F]">
+      {/* Responsive height container */}
+      <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+        {" "}
+        {/* 16:9 Aspect Ratio */}
+        <div className="absolute inset-0">
+          <AnimatePresence initial={false} custom={direction}>
+            <motion.div
+              key={currentSlide}
+              custom={direction}
+              variants={animationVariants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{
+                x: { type: "spring", stiffness: 300, damping: 30 },
+                opacity: { duration: 0.2 },
+              }}
+              className="absolute inset-0"
+            >
+              <LazyLoadImage
+                src={sliderData[currentSlide].image}
+                alt={sliderData[currentSlide].alt}
+                effect="blur"
+                className="w-full h-full object-cover"
+                wrapperClassName="w-full h-full"
+              />
+            </motion.div>
+          </AnimatePresence>
+        </div>
+      </div>
 
-export default MakingFabricSlider;
+      {/* Optional: Navigation Dots */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        {sliderData.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              currentSlide === index ? "bg-white w-4" : "bg-white/50"
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default MakingFabricSlider
+
