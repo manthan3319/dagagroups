@@ -40,7 +40,7 @@ const AboutUs = () => {
                 </div>
             </div>
 
-            <div className='lg:max-w-[1440px] px-[20px] m-auto py-[80px]'>
+            <div className='lg:max-w-[1440px] px-[20px] m-auto py-[80px] overflow-hidden'>
                 <div className='text-center sm:w-[70%] w-[100%] m-auto'>
                     <motion.h1
                         initial={{ opacity: 0, scale: 0.9 }}

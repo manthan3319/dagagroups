@@ -56,7 +56,7 @@ const FabricFunctions = () => {
       {/* Hangtags */}
       <div className='mt-[50px]'>
         <h1 className='font-tomorrow sm:text-[25px] text-[20px] font-bold pb-[10px] border-b-[1px] inline-block'>
-          Hangtags (Positex)
+          Hangtags 
         </h1>
         <div className='flex md:flex-row flex-col justify-center items-center gap-[25px] mt-[20px]'>
           {[Hangtags1, Hangtags2, Hangtags3].map((hangtag, index) => (

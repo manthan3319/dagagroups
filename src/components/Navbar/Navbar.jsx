@@ -137,7 +137,7 @@ const Navbar = () => {
                 <div className='flex justify-between items-center'>
                     <div>
                         <Link to="/" className='font-bold text-[30px] font-tomorrow'>
-                            <img src={logo} alt='logo' className='w-[300px]' />
+                            <img src={logo} alt='logo' className='w-[250px]' />
                         </Link>
                     </div>
                     <div>
