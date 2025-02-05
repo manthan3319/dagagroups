@@ -48,8 +48,11 @@ import slider4 from "./slider/Slide4.jpeg";
 import slider5 from "./slider/Slide5.jpeg";
 import slider6 from "./slider/Slide6.jpeg";
 import slider7 from "./slider/slider7.webp";
+import expo1 from "./expo.jpg";
+
 
 export {
+    expo1,
     slider7,
     slider1,
     slider2,
