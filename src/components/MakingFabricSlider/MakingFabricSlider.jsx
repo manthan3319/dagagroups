@@ -2,16 +2,14 @@ import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import "react-lazy-load-image-component/src/effects/blur.css"
-import { slider1, slider2, slider3, slider4, slider5, slider6, slider7 } from "../Images/Images"
+import { slider1, slider2, slider3, slider4, slider5 } from "../Images/Images"
 
 const sliderData = [
-  { id: 7, image: slider7, alt: "Fabric Slider 1" },
   { id: 1, image: slider1, alt: "Fabric Slider 1" },
   { id: 2, image: slider2, alt: "Fabric Slider 2" },
   { id: 3, image: slider3, alt: "Fabric Slider 3" },
   { id: 4, image: slider4, alt: "Fabric Slider 4" },
   { id: 5, image: slider5, alt: "Fabric Slider 5" },
-  { id: 6, image: slider6, alt: "Fabric Slider 6" },
 ]
 
 const MakingFabricSlider = () => {

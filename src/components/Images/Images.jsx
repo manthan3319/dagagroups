@@ -51,13 +51,11 @@ import expo1 from "./expo.jpg";
 
 export {
     expo1,
-    slider7,
     slider1,
     slider2,
     slider3,
     slider4,
     slider5,
-    slider6,
     Whatshapp,
     Lotto_Sport_Italia_logo,
     Parx,
