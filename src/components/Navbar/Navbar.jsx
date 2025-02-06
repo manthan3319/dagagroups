@@ -102,7 +102,7 @@ const Navbar = () => {
                 <div className='lg:max-w-[1440px] px-[20px] m-auto py-[20px]'>
                     <div className='flex flex-row justify-between items-center'>
                         <div>
-                            <Link onClick={handleLogoClick} className='font-bold text-[30px] font-tomorrow'>
+                            <Link  to="/" className='font-bold text-[30px] font-tomorrow'>
                                 <img src={logo} alt='logo' className='w-[300px]' />
                             </Link>
                         </div>
