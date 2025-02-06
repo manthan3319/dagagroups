@@ -41,13 +41,11 @@ import ALCIS from "./ALCIS.avif";
 import Parx from "./parx.jpeg";
 import Lotto_Sport_Italia_logo from "./Lotto_Sport_Italia_logo.svg.png";
 import Whatshapp from "./whatsapp.png"
-import slider1 from "./slider/Slide1.jpeg";
+import slider1 from "./slider/05-daga-fabric.jpg";
 import slider2 from "./slider/01-daga-fabric.jpg";
 import slider3 from "./slider/02-daga-fabric.jpg";
 import slider4 from "./slider/03-daga-fabric.jpg";
 import slider5 from "./slider/04-daga-fabric.jpg";
-import slider6 from "./slider/Slide6.jpeg";
-import slider7 from "./slider/slider7.webp";
 import expo1 from "./expo.jpg";
 
 
