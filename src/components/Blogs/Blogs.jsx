@@ -7,9 +7,9 @@ import { useInView } from 'react-intersection-observer';
 const blogPosts = [
     {
         id: 1,
-        title: 'Daga Group Spirit Of Fabric',
+        title: 'shree salasar textiles Spirit Of Fabric',
         date: '14-Oct-2024',
-        content: 'At DAGA GROUP we aspire to be leaders as manufacturers, suppliers, and exporters of high-quality fabrics and garments across the globe using best technology & talent to deliver quality textile products and services at the most attractive prices to our clients.',
+        content: 'At shree salasar textiles we aspire to be leaders as manufacturers, suppliers, and exporters of high-quality fabrics and garments across the globe using best technology & talent to deliver quality textile products and services at the most attractive prices to our clients.',
         image: category1,
     },
     {

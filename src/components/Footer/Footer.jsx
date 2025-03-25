@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link, useLocation } from "react-router-dom"
-import { logoWhite } from "../Images/Images"
+import { logo, logoWhite } from "../Images/Images"
 import { FaInstagram, FaFacebookSquare, FaYoutube, FaPhoneSquare, FaWhatsapp } from "react-icons/fa"
 import { FaLocationDot } from "react-icons/fa6"
 
@@ -25,13 +25,13 @@ const Footer = () => {
 
   return (
     <>
-      <div className="bg-[#0a0a0a] pt-[50px]">
+      <div className="bg-[#0a0a0a] pt-[80px]">
         <div className="lg:max-w-[1440px] px-[20px] m-auto">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-[50px]">
             {/* Company Info */}
             <div className="text-left">
               <Link to="/">
-                <img src={logoWhite || "/placeholder.svg"} alt="Daga Group" className="w-[150px]" />
+                <img src={logo || "/placeholder.svg"} alt="shree salasar textiles" className="w-[250px]" />
               </Link>
               <p className="text-gray-300 mt-[15px] font-tomorrow text-left">
                 We are committed to transform ourselves into a renowned textile company across the globe by establishing
@@ -161,7 +161,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* WhatsApp Floating Button */}
+        {/* WhatsApp Floating Button */}
       <div className="fixed bottom-6 right-6 z-50">
         <div className="relative">
           {/* WhatsApp Numbers Popup */}

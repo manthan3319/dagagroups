@@ -51,7 +51,8 @@ const Navbar = () => {
 
     const handleLogoClick = () => {
         window.scrollTo(0, 0);
-    };
+        navigator("/")
+    };  
 
     return (
         <motion.div
@@ -102,8 +103,8 @@ const Navbar = () => {
                 <div className='lg:max-w-[1440px] px-[20px] m-auto py-[20px]'>
                     <div className='flex flex-row justify-between items-center'>
                         <div>
-                            <Link  to="/" className='font-bold text-[30px] font-tomorrow'>
-                                <img src={logo} alt='logo' className='w-[300px]' />
+                            <Link onClick={handleLogoClick}   className='font-bold text-[30px] font-tomorrow'>
+                                <img src={logo} alt='logo' className='w-[200px]' />
                             </Link>
                         </div>
 
@@ -134,14 +135,14 @@ const Navbar = () => {
             </div>
 
             <div className='lg:hidden block px-[20px] py-[25px] border-b-[1px] border-black sticky top-0 bg-white z-[9999]' style={{ transition: 'top 0.3s ease, position 0.3s ease' }}>
-                <div className='flex justify-between items-center'>
+                <div className='flex justify-between  items-center'>
                     <div>
                         <Link to="/" className='font-bold text-[30px] font-tomorrow'>
-                            <img src={logo} alt='logo' className='w-[250px]' />
+                            <img src={logo} alt='logo' className='w-[200px]' />
                         </Link>
                     </div>
                     <div>
-                        <button onClick={toggleDrawer}><img src={menuicon} className='w-[45px]' /></button>
+                        <button onClick={toggleDrawer}><img src={menuicon} className='w-[32px]' /></button>
                     </div>
                 </div>
 

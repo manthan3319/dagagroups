@@ -48,7 +48,7 @@ const AboutUs = () => {
                         transition={{ duration: 0.8, ease: 'easeOut' }}
                         className='font-tomorrow sm:text-[45px] text-[30px] font-bold pb-[10px] border-b-[1px] inline-block'
                     >
-                        WELCOME TO DAGA GROUP
+                        WELCOME TO shree salasar textiles
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 50 }}

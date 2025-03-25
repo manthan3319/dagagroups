@@ -1,180 +1,280 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
-import { Link } from 'react-router-dom';
+"use client"
+
+import { useState } from "react"
+import emailjs from "emailjs-com"
+import { Send, Phone } from "lucide-react"
 
 const HomeContactUs = () => {
-    const [formData, setFormData] = useState({
-        firstName: '',
-        lastName: '',
-        mobileNumber: '',
-        subject: '',
-        message: '',
-    });
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    mobileNumber: "",
+    subject: "",
+    message: "",
+  })
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
-    };
+  const [formStatus, setFormStatus] = useState("idle")
+  const [errorMessage, setErrorMessage] = useState("")
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setFormData({ ...formData, [name]: value })
+  }
 
-        emailjs
-            .send(
-                'service_6mv7e74',
-                'template_m7cw23b', 
-                {
-                    firstName: formData.firstName,
-                    lastName: formData.lastName,
-                    mobileNumber: formData.mobileNumber,
-                    subject: formData.subject,
-                    message: formData.message,
-                },
-                'JykYQAmK0jyvbaoeP'
-                
-            )
-            .then(
-                (response) => {
-                    alert('Message sent successfully!');
-                    setFormData({
-                        firstName: '',
-                        lastName: '',
-                        mobileNumber: '',
-                        subject: '',
-                        message: '',
-                    });
-                },
-                (error) => {
-                    alert('Failed to send message, please try again later.');
-                }
-            );
-    };
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setFormStatus("submitting")
 
-    return (
-        <div className="px-[20px] py-[80px] bg-[#000000e0]">
-            <div>
-                <div className="title">
-                    <h1 className="text-[55px] font-tomorrow font-semibold text-white text-center">Contact Us</h1>
-                </div>
+    emailjs
+      .send(
+        "service_6mv7e74",
+        "template_m7cw23b",
+        {
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          mobileNumber: formData.mobileNumber,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        "JykYQAmK0jyvbaoeP",
+      )
+      .then(
+        (response) => {
+          setFormStatus("success")
+          setTimeout(() => {
+            setFormData({
+              firstName: "",
+              lastName: "",
+              mobileNumber: "",
+              subject: "",
+              message: "",
+            })
+            setFormStatus("idle")
+          }, 3000)
+        },
+        (error) => {
+          setFormStatus("error")
+          setErrorMessage("Failed to send message, please try again later.")
+          setTimeout(() => {
+            setFormStatus("idle")
+            setErrorMessage("")
+          }, 3000)
+        },
+      )
+  }
 
-                {/* Inquiry Cards */}
-                <div className="pt-[50px]">
-                    <div className="xl:w-[80%] w-[100%] m-auto flex justify-between lg:flex-row flex-col md:flex-wrap items-center text-center lg:gap-[45px] md:gap-[15px]">
-                        {/* Phone */}
-                        <div className="inquiryform 2xl:w-[28%] xl:w-[48%] lg:w-[48%] w-[100%] h-[200px] flex flex-col justify-center border-[1px] border-black gap-[7px] p-[30px] rounded-lg">
-                            <p className="text-[45px]">
-                                <i className="fa fa-phone-square" aria-hidden="true"></i>
-                            </p>
-                            <div>
-                                <Link to="tel:+919825055595" className="font-roboto">
-                                    <p className="text-[18px] font-roboto mb-[5px]">+91 98250 55595</p>
-                                </Link>
-                                <Link to="tel:+917229055595" className="font-roboto">
-                                    <p className="text-[18px] font-roboto">+91 72290 55595</p>
-                                </Link>
-                            </div>
-                        </div>
-
-                        <div className="inquiryform 2xl:w-[28%] xl:w-[47%] w-[100%] lg:w-[47%] h-[200px] flex flex-col justify-center border-[1px] border-black gap-[7px] p-[30px] rounded-lg">
-                            <p className="text-[45px]">
-                                <i className="fa fa-map-marker" aria-hidden="true"></i>
-                            </p>
-                            <Link
-                                to="https://www.google.com/maps/dir/21.140883,72.7825035/daga+group/@21.1658384,72.7542285,32432m/data=!3m2!1e3!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3be04fba0648af77:0x1e94f42dca286fea!2m2!1d72.8885088!2d21.1858099?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <p className="text-[20px] font-roboto">
-                                    6037, VIKAS LOGISTICS PARK, KUMBHARIA, SURAT,
-                                    <br />
-                                    GUJARAT 395010
-                                </p>
-                            </Link>
-                        </div>
-
-                        {/* Email */}
-                        <div className="inquiryform 2xl:w-[28%] xl:w-[100%] lg:w-[100%] w-[100%] h-[200px] flex flex-col justify-center border-[1px] border-black gap-[7px] p-[30px] rounded-lg">
-                            <p className="text-[45px]">
-                                <i className="fa fa-envelope" aria-hidden="true"></i>
-                            </p>
-                            <Link to="mailto:Info@dagagroups.com">
-                                <p className="text-[18px] font-roboto">Info@dagagroups.com</p>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Inquiry Form */}
-                <div className="lg:w-[80%] w-[100%] mt-[70px] m-auto flex flex-col gap-[15px] inquiryform">
-                    <div className="text-center mb-[50px]">
-                        <h1 className="text-[35px] font-roboto font-bold border-b-[1px] inline-block pb-[3px]">Inquiry form</h1>
-                    </div>
-                    <form onSubmit={handleSubmit} className='flex flex-col gap-[15px]'>
-                        <div className="grid sm:grid-cols-2 grid-cols-1 gap-[15px]">
-                            <input
-                                type="text"
-                                name="firstName"
-                                className="w-[100%] countact_usFiled"
-                                placeholder="First Name"
-                                value={formData.firstName}
-                                onChange={handleChange}
-                                required
-                            />
-                            <input
-                                type="text"
-                                name="lastName"
-                                className="w-[100%] countact_usFiled"
-                                placeholder="Last Name"
-                                value={formData.lastName}
-                                onChange={handleChange}
-                                required
-                            />
-                        </div>
-                        <div className="grid sm:grid-cols-2 grid-cols-1 gap-[15px]">
-                            <input
-                                type="text"
-                                name="mobileNumber"
-                                className="w-[100%] countact_usFiled"
-                                placeholder="Mobile Number"
-                                value={formData.mobileNumber}
-                                onChange={handleChange}
-                                required
-                            />
-                            <input
-                                type="text"
-                                name="subject"
-                                className="w-[100%] countact_usFiled"
-                                placeholder="Subject"
-                                value={formData.subject}
-                                onChange={handleChange}
-                                required
-                            />
-                        </div>
-                        <div>
-                            <textarea
-                                name="message"
-                                placeholder="Enter Message"
-                                className="w-[100%] p-[10px] countact_usFiled"
-                                cols={12}
-                                rows={12}
-                                value={formData.message}
-                                onChange={handleChange}
-                                required
-                            />
-                        </div>
-                        <div className="text-center">
-                            <button
-                                type="submit"
-                                className="inline-block px-[30px] font-tomorrow bg-black text-white py-[8px] text-[18px] rounded-lg"
-                            >
-                                Submit
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+  return (
+    <div className="relative">
+      <div className="lg:max-w-[1440px] m-auto  px-[20px] py-16 relative z-20">
+        {/* Get In Touch Section */}
+        <div className="text-center mb-12">
+          <h2 className="text-black text-5xl font-bold mb-4">Get In Touch</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">We're here to help and answer any questions you might have</p>
         </div>
-    );
-};
 
-export default HomeContactUs;
+        {/* Department Contact Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <ExportDepartmentCard
+            department="Knits Department"
+            company="(Shree Salasar Textiles)"
+            contacts={[
+              { name: "Harsh Daga", phone: "+91 9825055595" },
+              { name: "Raghav Daga", phone: "+91 7229055595" },
+            ]}
+          />
+          
+          <ExportDepartmentCard
+            department="Shirting & Suiting"
+            company="(Hanuman Textiles)"
+            contacts={[{ name: "Lalit Daga", phone: "+91 75728 55595" }]}
+          />
+
+          <ExportDepartmentCard
+            department="Furnishing Department"
+            company="(Maruti Furnishing)"
+            contacts={[
+              { name: "Vijay Mohata", phone: "+91 95742 55595" },
+              { name: "Anuj Mohata", phone: "+91 97378 22630" },
+            ]}
+          />
+
+          
+
+          <ExportDepartmentCard
+            department="Export Department"
+            company=""
+            contacts={[{ name: "Jayant Daga", phone: "+91 90543 45595" }]}
+          />
+        </div>
+
+        {/* Contact Form */}
+        <div className="max-w-4xl mx-auto border border-gray-200 bg-white rounded-xl shadow-lg p-8">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="bg-red-600 rounded-full p-2 text-white">
+              <Send size={20} />
+            </div>
+            <h3 className="text-black text-2xl font-bold">Send Us a Message</h3>
+          </div>
+
+          {/* Form status messages */}
+          {formStatus === "success" && (
+            <div className="mb-6 p-4 bg-green-50 border border-green-200 text-green-700 rounded-md">
+              Thank you for your message! We'll get back to you soon.
+            </div>
+          )}
+
+          {formStatus === "error" && (
+            <div className="mb-6 p-4 bg-red-50 border border-red-200 text-red-700 rounded-md">{errorMessage}</div>
+          )}
+
+          <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label htmlFor="firstName" className="block text-gray-700 mb-2">
+                First Name <span className="text-red-500">*</span>
+              </label>
+              <input
+                id="firstName"
+                name="firstName"
+                type="text"
+                value={formData.firstName}
+                onChange={handleChange}
+                placeholder="First Name"
+                className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-red-500"
+                disabled={formStatus === "submitting"}
+                required
+              />
+            </div>
+
+            <div>
+              <label htmlFor="lastName" className="block text-gray-700 mb-2">
+                Last Name <span className="text-red-500">*</span>
+              </label>
+              <input
+                id="lastName"
+                name="lastName"
+                type="text"
+                value={formData.lastName}
+                onChange={handleChange}
+                placeholder="Last Name"
+                className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-red-500"
+                disabled={formStatus === "submitting"}
+                required
+              />
+            </div>
+
+            <div>
+              <label htmlFor="mobileNumber" className="block text-gray-700 mb-2">
+                Mobile Number <span className="text-red-500">*</span>
+              </label>
+              <input
+                id="mobileNumber"
+                name="mobileNumber"
+                type="tel"
+                value={formData.mobileNumber}
+                onChange={handleChange}
+                placeholder="Mobile Number"
+                className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-red-500"
+                disabled={formStatus === "submitting"}
+                required
+              />
+            </div>
+
+            <div>
+              <label htmlFor="subject" className="block text-gray-700 mb-2">
+                Subject <span className="text-red-500">*</span>
+              </label>
+              <input
+                id="subject"
+                name="subject"
+                type="text"
+                value={formData.subject}
+                onChange={handleChange}
+                placeholder="Subject"
+                className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-red-500"
+                disabled={formStatus === "submitting"}
+                required
+              />
+            </div>
+
+            <div className="md:col-span-2">
+              <label htmlFor="message" className="block text-gray-700 mb-2">
+                Your Message <span className="text-red-500">*</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows={6}
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Enter Message"
+                className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-red-500"
+                disabled={formStatus === "submitting"}
+                required
+              ></textarea>
+            </div>
+
+            <div className="md:col-span-2">
+              <button
+                type="submit"
+                disabled={formStatus === "submitting"}
+                className="bg-black text-white py-3 px-6 rounded flex items-center justify-center gap-2 w-full hover:bg-gray-800 transition-colors disabled:bg-gray-600"
+              >
+                {formStatus === "submitting" ? (
+                  <>
+                    <span className="animate-spin h-4 w-4 border-2 border-white border-t-transparent rounded-full mr-2"></span>
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    <Send size={18} />
+                    Submit
+                  </>
+                )}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div className="h-96 w-[100%] bg-zinc-950 absolute z-10 -bottom-0 rounded-t-2xl" />
+    </div>
+  )
+}
+
+// Special card for Department with red header and curved bottom
+const ExportDepartmentCard = ({ department, contacts, company }) => {
+  return (
+    <div className="rounded-xl overflow-hidden shadow-md border border-gray-200">
+      {/* Top red section with curved bottom */}
+      <div className="relative bg-red-600 text-white p-6 pb-8">
+        <h3 className="font-bold text-xl text-center">{department}</h3>
+        <p className="font-normal text-[15px] font-poppins mt-3 text-center">{company}</p>
+        <div
+          className="absolute bottom-0 left-0 right-0 h-16 bg-red-600"
+          style={{
+            borderBottomLeftRadius: "100%",
+            borderBottomRightRadius: "100%",
+            transform: "translateY(50%)",
+          }}
+        ></div>
+      </div>
+
+      {/* Bottom white section */}
+      <div className="bg-white pt-8 p-6">
+        <div className="relative">
+          {contacts.map((contact, index) => (
+            <div key={index} className="mb-4 last:mb-0">
+              <p className="font-medium text-lg text-gray-800">{contact.name}</p>
+              <a href={`tel:${contact.phone.replace(/\s+/g, "")}`} className="flex items-center gap-2 text-gray-700">
+                <Phone size={14} />
+                {contact.phone}
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default HomeContactUs
+

@@ -18,7 +18,7 @@ import aboutus from "./aboutus.jpg";
 import aboutimg from "./aboutimg.jpg";
 import dagabanner from "./dagabanner.jpg";
 import galary1 from "./galary1.png";
-import logo from "./Daga Group LOgo (1).webp";
+import logo from "./shreesalasar.png";
 import fabricfunctions from "./fabricfunctions.jpg";
 import FunctionalFabric1 from "./FunctionalFabric1.webp";
 import FunctionalFabric2 from "./FunctionalFabric2.webp";

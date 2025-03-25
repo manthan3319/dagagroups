@@ -51,12 +51,12 @@ const WelcomeToDaga = () => {
                         animate={inView ? 'visible' : 'hidden'}
                         variants={textVariants}
                     >
-                        <h1 className='font-tomorrow text-[45px] font-bold pb-[10px]'>WELCOME TO DAGA GROUP</h1>
+                        <h1 className='font-tomorrow text-[45px] font-bold pb-[10px]'>WELCOME TO shree salasar textiles</h1>
                         <p className='font-tomorrow text-[18px] font-medium'>SPIRIT OF FABRICS</p>
                         <div className='mt-[15px] flex flex-col gap-y-[10px]'>
                             <p className='font-roboto font-normal text-[18px] leading-[30px]'>WE ARE WHOLESALERS, MANUFACTURERS,
                                 EXPORTER OF FABRICS.</p>
-                            <p className='font-roboto font-normal text-[18px] leading-[30px]'>AT DAGA GROUP, WE PERFORM IN UNISON BY FOLLOWING OUR VALUES AND ETHICAL GUIDELINES CODE OF CONDUCT AS A SOURCE OF GUIDANCE AND INSPIRATION, WHICH ENABLE US TO ACHIEVE OUR VISION.</p>
+                            <p className='font-roboto font-normal text-[18px] leading-[30px]'>AT shree salasar textiles, WE PERFORM IN UNISON BY FOLLOWING OUR VALUES AND ETHICAL GUIDELINES CODE OF CONDUCT AS A SOURCE OF GUIDANCE AND INSPIRATION, WHICH ENABLE US TO ACHIEVE OUR VISION.</p>
                         </div>
 
                         <Link className='inline-block mt-[15px] bg-black py-[10px] px-[30px] rounded-lg font-semibold font-tomorrow text-white'>
